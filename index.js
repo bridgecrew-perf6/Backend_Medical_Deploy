@@ -12,7 +12,7 @@ const AppointmentRoute = require("./routes/AppointmentRoutes");
 
 
 DB();
-port = 2000||process.env.PORT;
+const port = process.env.PORT|| 3900;
 app.use(cors());
 app.use(express.json());
 app.use("/api/announcement" ,announcementRoute);
