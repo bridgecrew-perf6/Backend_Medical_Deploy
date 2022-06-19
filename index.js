@@ -21,7 +21,7 @@ app.use("/api/Specialist",SpecialistRoute);
 app.use("/api/Doctor",DoctorRoute)
 app.use("/api/Appointment",AppointmentRoute)
 
-app.listen(port, () => {
+app.listen(port,() => {
     console.log("listening on port "+3900);
 });
   
