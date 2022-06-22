@@ -21,7 +21,7 @@ const getAnnouncement = asyncHandler(async(req,res)=>{
 })
 //GetAll
 const getAllAnnouncement = asyncHandler(async(req,res)=>{
-    const Announcement =await Announcements.find({})
+    const Announcement =await Announcements.find({}).sort([['_id', -1]])
     res.status(200).json(Announcement)
 })
 const UpdateAnnouncement = asyncHandler(async(req,res)=>{
